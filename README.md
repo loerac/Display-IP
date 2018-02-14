@@ -26,7 +26,7 @@ Find the python script and kill it by entering the PID number
 ```
 sudo kill <PID_Number>
 ```
-The PID number is the second column in the row, it next to either _pi_ or _root_
+The PID number is the in the second column in every row, it next to either _pi_ or _root_
 
 Or if this is the only python script running,
 ```
