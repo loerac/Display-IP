@@ -34,7 +34,7 @@ If this is the only script you want to kill, find the PID number and kill it. Yo
 ```
 $ ps aux | grep -i python
 ```
-This will display all the python scripts running. You will want to find the script(s) that match the path you entered in your _/etc/profile_ file. After locating it, grab the PID number which is in the second column in every row, it next to either _pi_ or _root_ and enter the following command to kill that script:
+This will display all the python scripts running. You will want to find the script(s) that match the path you entered in your _/etc/profile_ file. After locating it, grab the PID number which is in the second column in every row, its next to either _pi_ or _root_ and enter the following command to kill that script:
 ```
 $ sudo kill <PID_Number>
 ```
