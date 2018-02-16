@@ -15,9 +15,6 @@ from papirus import Papirus
 # Socket for IP Address
 import socket
 
-# Screen size
-SIZE=27
-
 # Fonts
 hatdir = '/proc/device-tree/hat'
 ipFont = '/usr/share/fonts/truetype/freefont/FreeMonoOblique.ttf'
@@ -65,9 +62,10 @@ if __name__=="__main__":
         for i in range(0,len(ipAddr)):
             image=Image.new('1',papirus.size,WHITE)
             draw=ImageDraw.Draw(image)
-            draw.text(((5-inc),30),ipAddr,fill=BLACK,font=ipFont)
+            draw.text((inc,30),ipAddr,fill=BLACK,font=ipFont)
             papirus.display(image)
             papirus.partial_update()
+<<<<<<< HEAD
             inc+=25
             time.sleep(0.5)
         inc=5
@@ -77,3 +75,9 @@ if __name__=="__main__":
     papirus.display(image)
     time.sleep(5)
     papirus.update()
+=======
+            inc-=20
+            sleep(0.5)
+        inc=5
+        papirus.update()
+>>>>>>> e0d70af645ed0a9ba87b8913a8615ac891399811
