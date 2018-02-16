@@ -4,7 +4,7 @@
 # System
 import os
 import sys
-from time import sleep
+import time
 
 # Image/Papirus
 from PIL import Image
@@ -60,7 +60,8 @@ if __name__=="__main__":
 
     # Display the IP Address
     inc=5
-    while 1:
+    t_end = time.time() + 30
+    while time.time() < t_end:
         for i in range(0,len(ipAddr)):
             image=Image.new('1',papirus.size,WHITE)
             draw=ImageDraw.Draw(image)
@@ -68,7 +69,11 @@ if __name__=="__main__":
             papirus.display(image)
             papirus.partial_update()
             inc+=25
-            sleep(0.5)
+            time.sleep(0.5)
         inc=5
         papirus.update()
     
+    draw.text(((5-inc),30),"Bye bye",fill=BLACK,font=ipFont)
+    papirus.display(image)
+    time.sleep(5)
+    papirus.update()
