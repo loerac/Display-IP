@@ -22,7 +22,7 @@ Save and exit the text file by hitting _esc_ and then entering _:wq_
 Shutdown/reboot the Raspberry Pi to see the IP Address on the screen
 
 # Kill Script
-Aftering your IP address is displayed and are able to login to your Rasberry Pi, you might want to kill the script. 
+Aftering your IP address is displayed and are able to login to your Rasberry Pi, you might want to kill the script. Or you can wait for 30 seconds and then the script will end.
 ### Automatic
 If this is the only python script running,
 ```
